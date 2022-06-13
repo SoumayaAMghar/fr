@@ -117,10 +117,15 @@
                     O+
                     </td>
                     <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-200">
-                        <div>
+                        <div class="flex space-between">
                           <form method="post" class="mr-1" action="deletebiometry">
                             <input type="hidden" name="id" value="<?php echo $biometry['id']; ?>">
                             <button class="text-red-700"><i class="fa fa-trash"></i></button>
+                          </form>
+
+                          <form method="post" class="mr-1" action="updateAllery" data-netlify="true">
+                            <input type="hidden" name="id" value="<?php echo $allergie['id']; ?>">
+                            <button class="text-emerald-400"><i class="fa fa-edit"></i></button>
                           </form>
                         </div>
                       </div>
